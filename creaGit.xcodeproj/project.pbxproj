@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		899686FC1BF59A1B00D5EA6B /* minireto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899686FB1BF59A1B00D5EA6B /* minireto.swift */; };
 		89EF38FE1BF239CE00B21018 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EF38FD1BF239CE00B21018 /* main.m */; };
 		89EF39011BF239CE00B21018 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EF39001BF239CE00B21018 /* AppDelegate.m */; };
 		89EF39041BF239CE00B21018 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EF39031BF239CE00B21018 /* ViewController.m */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		899686FA1BF59A1B00D5EA6B /* creaGit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "creaGit-Bridging-Header.h"; sourceTree = "<group>"; };
+		899686FB1BF59A1B00D5EA6B /* minireto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = minireto.swift; sourceTree = "<group>"; };
+		899686FD1BF59A6400D5EA6B /* minireto.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = minireto.playground; sourceTree = "<group>"; };
 		89EF38F91BF239CE00B21018 /* creaGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = creaGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89EF38FD1BF239CE00B21018 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89EF38FF1BF239CE00B21018 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +114,9 @@
 				89EF390A1BF239CE00B21018 /* LaunchScreen.storyboard */,
 				89EF390D1BF239CE00B21018 /* Info.plist */,
 				89EF38FC1BF239CE00B21018 /* Supporting Files */,
+				899686FB1BF59A1B00D5EA6B /* minireto.swift */,
+				899686FD1BF59A6400D5EA6B /* minireto.playground */,
+				899686FA1BF59A1B00D5EA6B /* creaGit-Bridging-Header.h */,
 			);
 			path = creaGit;
 			sourceTree = "<group>";
@@ -270,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899686FC1BF59A1B00D5EA6B /* minireto.swift in Sources */,
 				89EF39041BF239CE00B21018 /* ViewController.m in Sources */,
 				89EF39011BF239CE00B21018 /* AppDelegate.m in Sources */,
 				89EF38FE1BF239CE00B21018 /* main.m in Sources */,
@@ -413,10 +421,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = creaGit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ricardogonzalez.creaGit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "creaGit/creaGit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -424,10 +435,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = creaGit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ricardogonzalez.creaGit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "creaGit/creaGit-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -498,6 +511,7 @@
 				89EF39281BF239CF00B21018 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89EF39291BF239CF00B21018 /* Build configuration list for PBXNativeTarget "creaGitTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +520,7 @@
 				89EF392B1BF239CF00B21018 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89EF392C1BF239CF00B21018 /* Build configuration list for PBXNativeTarget "creaGitUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +529,7 @@
 				89EF392E1BF239CF00B21018 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
